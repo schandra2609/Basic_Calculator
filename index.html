@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="heading" onclick="location.reload()">CALCULATOR</h1>
+    <div class="container">
+        <input type="text" id="show" readonly="number">
+        <div class="butt-cont">
+            <div class="buttons">
+                <button onclick="clearDisplay()" id="AC" class="operator cmnt" data-comment-index="0">AC</button>
+                <button onclick="popFromDisplay()" id="DEL" class="operator cmnt" data-comment-index="1">DEL</button>
+                <button onclick="pushToDisplay('%')" id="percent" class="operator cmnt" data-comment-index="2">%</button>
+                <button onclick="pushToDisplay('/')" id="divide" class="operator cmnt" data-comment-index="3">/</button>
+                <button onclick="pushToDisplay('7')" id="seven" class="number cmnt" data-comment-index="4">7</button>
+                <button onclick="pushToDisplay('8')" id="eight" class="number cmnt" data-comment-index="5">8</button>
+                <button onclick="pushToDisplay('9')" id="nine" class="number cmnt"  data-comment-index="6">9</button>
+                <button onclick="pushToDisplay('*')" id="multiply" class="operator cmnt" data-comment-index="7">X</button>
+                <button onclick="pushToDisplay('4')" id="four" class="number cmnt" data-comment-index="8">4</button>
+                <button onclick="pushToDisplay('5')" id="five" class="number cmnt" data-comment-index="9">5</button>
+                <button onclick="pushToDisplay('6')" id="six" class="number cmnt" data-comment-index="10">6</button>
+                <button onclick="pushToDisplay('-')" id="subtract" class="operator cmnt" data-comment-index="11">-</button>
+                <button onclick="pushToDisplay('1')" id="one" class="number cmnt" data-comment-index="12">1</button>
+                <button onclick="pushToDisplay('2')" id="two" class="number cmnt" data-comment-index="13">2</button>
+                <button onclick="pushToDisplay('3')" id="three" class="number cmnt" data-comment-index="14">3</button>
+                <button onclick="pushToDisplay('+')" id="add" class="operator cmnt" data-comment-index="15">+</button>
+                <button onclick="pushToDisplay('0')" id="zero" class="number cmnt" data-comment-index="16">0</button>
+                <button onclick="pushToDisplay('.')" id="float" class="point cmnt" data-comment-index="17">.</button>
+                <button onclick="calculate()" id="result" class="operator cmnt" data-comment-index="18">=</button>
+            </div>
+        </div>
+    </div>
+    <div id="comment">This is a comment box.</div>
+    <script src="script.js"></script>
+</body>
+</html>
