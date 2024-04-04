@@ -16,7 +16,7 @@ body {
 
 h1 {
     font-size: 72px;
-    letter-spacing: 1rem;
+    letter-spacing: 0.3rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     width: max-content;
     position: relative;
