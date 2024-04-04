@@ -31,7 +31,8 @@ const comments = [
     "Number: 0",
     "Decimal-point",
     "Calculates the expression on the screen",
-    "Clicking on this reloads the page"
+    "Clicking on this reloads the page",
+    "Calculator Logo"
 ];
 
 
