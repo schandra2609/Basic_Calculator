@@ -16,8 +16,7 @@ body {
 
 h1 {
     font-size: 72px;
-    letter-spacing: 0.3rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria;
     width: max-content;
     position: relative;
     cursor: pointer;
@@ -56,7 +55,7 @@ h1:hover::after {
 }
 
 .container {
-    height: 60vmin;
+    height: 65vmin;
     width: 50vmin;
     border: 1px solid black;
     background-color: rgb(96, 96, 96);
@@ -75,15 +74,29 @@ h1:hover::after {
     box-shadow: 10px 10px 10px black;
 }
 
+.icon {
+    height: 8vmin;
+    width: 50vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    height: 6.5vmin;
+    width: 6.5vmin;
+    border: none;
+    border-radius: 50%;
+    transform: rotate(90deg);
+}
+
 #show {
     height: 10vmin;
     width: 44vmin;
-    margin: 3vmin;
-    margin-bottom: 0;
     background-color: rgb(80, 140, 30);
     font-size: 3rem;
     font-family: monospace;
-    margin-top: 4vmin;
+    margin-top: 0;
 }
 
 .butt-cont {
@@ -168,7 +181,6 @@ button:active {
 
 #comment {
     display: none;
-    /* visibility: hidden; */
     position: absolute;
     background-color: white;
     font-size: 13px;
@@ -182,5 +194,5 @@ button:active {
     width: 10%;
     height: auto;
     font-family: 'Courier New';
-    overflow: -moz-hidden-unscrollable;
+    overflow: hidden;
 }
