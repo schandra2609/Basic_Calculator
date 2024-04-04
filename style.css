@@ -67,9 +67,9 @@ h1:hover::after {
     border-top-style: inset;
     border-left: 8px rgb(212, 210, 210);
     border-left-style: inset;
-    border-bottom: 10px rgb(100, 100, 100);
+    border-bottom: 10px rgb(130, 130, 130);
     border-bottom-style: outset;
-    border-right: 10px rgb(100, 100, 100);
+    border-right: 10px rgb(130, 130, 130);
     border-right-style: outset;
     box-shadow: 10px 10px 10px black;
 }
