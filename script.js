@@ -9,7 +9,7 @@ const cBox = document.getElementById("comment");
 // Array of all buttons
 const buttons = document.querySelectorAll(".cmnt");
 
-
+let gotResult = false;
 
 const comments = [
     "Clears the display",
@@ -30,7 +30,8 @@ const comments = [
     "Gives the result of addition operation",
     "Number: 0",
     "Decimal-point",
-    "Calculates the expression on the screen"
+    "Calculates the expression on the screen",
+    "Clicking on this reloads the page"
 ];
 
 
@@ -50,15 +51,18 @@ buttons.forEach(btn => {
 
 
 function pushToDisplay(ip) {
-    display.value = display.value === "0" ? ip : display.value + ip;
+    display.value = (ip === ".") ? display.value + ip : ((display.value === "0" || gotResult) ? ip : display.value + ip);
+    gotResult = false;
 }
 
 function popFromDisplay() {
-    display.value = display.value.length === 1 ? "0" : display.value.slice(0, -1);
+    display.value = gotResult ? "0" : (display.value.length === 1 ? "0" : display.value.slice(0, -1));
+    gotResult = false;
 }
 
 function clearDisplay() {
     display.value = "0";
+    gotResult = false;
 }
 
 function calculate() {
@@ -67,6 +71,7 @@ function calculate() {
     } catch(e) {
         display.value = "Error!";
     }
+    gotResult = true;
 }
 
 function showComment(comment, butt) {
